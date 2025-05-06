@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8" />
+    <title>iLearn 登入</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <div class="login-box">
+        <div class="left">
+            <img src="img\moodle4_log.jpg" alt="NID" class="logo-img"/>
+            <input type="text" placeholder="帳號" />
+            <input type="password" placeholder="密碼" />
+            <button onclick="alert('模擬登入')">登入</button>
+        </div>
+
+        <div class="divider"></div> <!-- 黑色分隔線 -->
+
+        <div class="right">
+            <p style="font-size: 21px ;"><strong>
+                請使用 NID 帳號/密碼登入平台。<br />
+                欲變更 NID 密碼，請連結至
+
+                <img src="img\nidlogo.png" alt="NID" />
+            </strong></p>
+            <p>
+                <span class="lang-text">正體中文 (zh_tw)</span> ・
+                <a class="lang-text" href="#"> Cookie 使用資訊</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cookie-bar" id="cookieBar">
+    If you continue browsing this website, you agree to our policies:<br />
+    <a href="#">尊重及保護智慧財產權</a>
+    <button onclick="document.getElementById('cookieBar').style.display='none'">
+        Continue
+    </button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: "Noto Sans TC", sans-serif;
+    background-image: url('img/aaaaa.jpg');  /* ✅ 圖片路徑 */
+    background-size: cover;                      /* 填滿畫面 */
+    background-position: center;                 /* 置中對齊 */
+    background-repeat: no-repeat;                /* 不重複 */
+    background-attachment: fixed;                /* 捲動時固定 */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.lang-text {
+    color: #802e2e;
+}
+.login-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;         /* ⭐ 關鍵：使 divider 垂直置中 */
+    width: 900px;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.left, .right {
+    width: 45%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.left h1 {
+    font-size: 36px;
+    color: #a3292b;
+    margin-bottom: 20px;
+}
+
+.left input {
+    width: 85%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #928f8f;
+    border-radius: 8px;
+}
+
+.left button {
+    width: 90%;
+    padding: 10px;
+    background-color: #a3292b;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.right {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    line-height: 2.5;
+}
+
+.right img {
+    width: 60px;
+    vertical-align: middle;
+}
+
+.logo-img {
+    width:90%;
+    margin-bottom: 10px;
+}
+/* ✅ 黑色垂直線 */
+.divider {
+    width: 1px;
+    height: 85%;                  /* ⭐ 可調整長度百分比 */
+    background-color: rgba(229, 227, 227, 0.65);
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        flex-direction: column;
+        height: auto;
+        width: 60%;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .divider {
+        display: none;
+    }
+}
+
+.cookie-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2a1e1e; /* 深咖啡色背景 */
+    color: #ffffff;            /* 主要文字白色 */
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.3;
+}
+
+.cookie-bar a {
+    color: #ffffff;            /* 連結黃色（可改 #ffa500） */
+    text-decoration: underline;
+}
+
+.cookie-bar button {
+    background: none;
+    border: none;
+    color: orange;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+}
